@@ -143,9 +143,15 @@ fn test_release_milestone() {
 }
 
 // Include test modules
+#[path = "test/deposit_authorization.rs"]
+mod deposit_authorization;
+#[path = "refund.rs"]
 mod refund;
+#[path = "release.rs"]
 mod release;
+#[path = "deposit.rs"]
 mod deposit;
+#[path = "create_contract.rs"]
 mod create_contract;
 mod access_control;
 mod approval_expiry;

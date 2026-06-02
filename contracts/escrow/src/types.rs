@@ -1,4 +1,4 @@
-use soroban_sdk::{contracterror, contracttype, Address, String};
+use soroban_sdk::{contracterror, contracttype, Address, String, Vec};
 
 #[contracttype]
 #[derive(Clone, Debug, Eq, PartialEq)]
@@ -39,6 +39,7 @@ pub enum Error {
     FreelancerMismatch = 21,
     InvalidRating = 22,
     ReputationAlreadyIssued = 23,
+    EmptyMilestones = 24,
 }
 
 #[contracttype]
